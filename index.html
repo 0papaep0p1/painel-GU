@@ -1,0 +1,180 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAINEL-GUARNIÇÃO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: url('img/fundinho2.png') no-repeat center center;
+            background-size: contain;
+        }
+        .text-box {
+            position: absolute;
+            background: rgba(248, 1, 1, 0);
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .box { width: 480px; }
+        .box-small { width: 190px; }
+        /* Ajuste fino das posições botões da GU */
+        .box1 { top: 22%; left: 3%; }
+        .box2 { top: 31%; left: 9%; }
+        .box3 { top: 35%; left: 9%; }
+        .box4 { top: 40%; left: 9%; }
+        .box5 { top: 45%; left: 8%; }
+        .box6 { top: 50%; left: 8%; }
+        .box7 { top: 55%; left: 8%; }
+        .box8 { top: 60%; left: 8%; }
+        .box9 { top: 21%; left: 41%; }
+        .box10 { top: 31%; left: 51%; }
+        .box11 { top: 35%; left: 49%; }
+        .box12 { top: 39%; left: 49%; }
+        .box13 { top: 26%; left: 78%; }
+        .box14 { top: 30%; left: 82%; }
+        .box15 { top: 34%; left: 82%; }
+        .box16 { top: 39%; left: 82%; }
+        .box17 { top: 85%; left: 44%; }
+        .box18 { top: 88%; left: 44%; }
+        .box19 { top: 91%; left: 43%; }
+        .box20 { top: 95%; left: 43%; }
+        .box21 { top: 85%; left: 58%; }
+        .box22 { top: 88%; left: 58%; }
+        
+        /* Ajuste fino das posições botões de AVISOS */
+
+        .box23 { top: 52%; left: 72%; }
+        .box24 { top: 56%; left: 72%; }
+        .box25 { top: 61%; left: 72%; }
+        .box26 { top: 66%; left: 72%; }
+        .box27 { top: 71%; left: 72%; }
+        .box28 { top: 76%; left: 72%; }
+        .box29 { top: 81%; left: 72%; }
+        .box30 { top: 86%; left: 72%; }
+        .box31 { top: 91%; left: 72%; }
+        .box32 { top: 95%; left: 72%; }
+
+        .audio-button {
+            position: absolute;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+         /* Ajuste fino das posições  DOS BOTÕES DE AUDIO */
+
+        .audio1 { top: 11%; left: 49%; }
+        .audio2 { top: 11%; left: 11%; }
+        .audio3 { top: 6%; left: 70%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+                     <!-- ESCALA DA GURNIÇÃO DE SERVIÇO -->
+        <input type="text" class="text-box box-small box1" placeholder="ABTR">
+        <input type="text" class="text-box box-small box2" placeholder="CH SOC">
+        <input type="text" class="text-box box-small box3" placeholder="MOT">
+        <input type="text" class="text-box box-small box4" placeholder="AUXILIAR">
+        <input type="text" class="text-box box-small box5" placeholder="CH L D">
+        <input type="text" class="text-box box-small box6" placeholder="AUX L D">
+        <input type="text" class="text-box box-small box7" placeholder="CH L E">
+        <input type="text" class="text-box box-small box8" placeholder="AUX L E">
+        <input type="text" class="text-box box-small box9" placeholder="ASU">
+        <input type="text" class="text-box box-small box10" placeholder="CONDUTOR">
+        <input type="text" class="text-box box-small box11" placeholder="SOCORRISTA 1">
+        <input type="text" class="text-box box-small box12" placeholder="SOCORRISTA 2">
+        <input type="text" class="text-box box-small box13" placeholder="CMT">
+        <input type="text" class="text-box box-small box14" placeholder="ANCORAGEM">
+        <input type="text" class="text-box box-small box15" placeholder="RESGATISTA 1">
+        <input type="text" class="text-box box-small box16" placeholder="RESGATISTA 2">
+        <input type="text" class="text-box box-small box17" placeholder="CMT">
+        <input type="text" class="text-box box-small box18" placeholder="LOG">
+        <input type="text" class="text-box box-small box19" placeholder="R1">
+        <input type="text" class="text-box box-small box20" placeholder="R2">
+        <input type="text" class="text-box box-small box21" placeholder="S1">
+        <input type="text" class="text-box box-small box22" placeholder="S2">
+                        <!-- AVISOS CANTO DIREITO -->
+        <input type="text" class="text-box box box23" placeholder="AVISO-1">
+        <input type="text" class="text-box box box24" placeholder="AVISO-2">
+        <input type="text" class="text-box box box25" placeholder="AVISO-3">
+        <input type="text" class="text-box box box26" placeholder="AVISO-4">
+        <input type="text" class="text-box box box27" placeholder="AVISO-5">
+        <input type="text" class="text-box box box28" placeholder="AVISO-6">
+        <input type="text" class="text-box box box29" placeholder="AVISO-7">
+        <input type="text" class="text-box box box30" placeholder="AVISO-8">
+        <input type="text" class="text-box box box31" placeholder="AVISO-9">
+        <input type="text" class="text-box box box32" placeholder="AVISO-10">
+
+                            <!-- BOTÕES DE AUDIO -->
+        <button class="audio-button audio1" onclick="tocarAudio('audio1')">
+            <img src="img/ASU.png" alt="Play" width="200" height="200">
+        </button>
+        <button class="audio-button audio2" onclick="tocarAudio('audio2')">
+            <img src="img/ABTR.png" alt="Play" width="200" height="200">
+        </button>
+        <button class="audio-button audio3" onclick="tocarAudio('audio3')">
+            <img src="img/CBMSC.png" alt="Play" width="390" height="190">
+        </button>
+
+
+                <!-- SETAR O AUDIO DE CADA BOTÃO -->
+        <audio id="audio1" src="audio/ASU.mp3"></audio>
+        <audio id="audio2" src="audio/ABTR.mp3"></audio>
+        <audio id="audio3" src="audio/INCENDIO.mp3"></audio>
+    </div>
+    
+                <!-- SCRIPT PARA TOCAS OS AUDIOS -->
+
+    <script>
+        function tocarAudio(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+    </script>
+    
+              <!-- SCRIPT PARA LIMPAR CAMPOS DA ESCALA SETADO PARA TODO DIA AS 07:50 DA MANHÃ -->
+
+    <script>
+        function limparCampos() {
+            for (let i = 1; i <= 22; i++) {
+                document.querySelector(`.box${i}`).value = "";
+            }
+        }
+
+        function agendarLimpeza() {
+            const agora = new Date();
+            const proximoHorario = new Date();
+            proximoHorario.setHours(7, 30, 0, 0);
+            
+            if (agora > proximoHorario) {
+                proximoHorario.setDate(proximoHorario.getDate() + 1);
+            }
+            
+            const tempoAteLimpeza = proximoHorario - agora;
+            setTimeout(() => {
+                limparCampos();
+                setInterval(limparCampos, 24 * 60 * 60 * 1000);
+            }, tempoAteLimpeza);
+        }
+        
+        agendarLimpeza();
+    </script>
+</body>
+</html>
